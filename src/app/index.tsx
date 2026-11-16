@@ -1,15 +1,19 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, StyleSheet } from "react-native";
+
 import AppHeader from "../components/AppHeader";
 import AppFooter from "../components/AppFooter";
+import AboutScreen from "../components/AboutScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <AppHeader />
+
       <View style={styles.content}>
-        <Text style={styles.text}>Contenu principal de l’application</Text>
+        <AboutScreen />
       </View>
+
       <AppFooter />
     </View>
   );
@@ -22,11 +26,5 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  text: {
-    color: "white",
-    fontSize: 18,
   },
 });

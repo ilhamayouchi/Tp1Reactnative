@@ -3,21 +3,21 @@ import { View, Text, StyleSheet } from "react-native";
 
 export default function AppFooter() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>All rights reserved, 2025</Text>
+    <View style={styles.footer}>
+      <Text style={styles.footerText}>All rights reserved, 2025</Text>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: "#F4CE14",
-    paddingVertical: 12,
-    paddingHorizontal: 16,
+  footer: {
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    backgroundColor: "#3E4A59",
   },
-  text: {
+  footerText: {
     fontSize: 14,
-    color: "black",
     textAlign: "center",
+    color: "#FFFFFF",
   },
 });
