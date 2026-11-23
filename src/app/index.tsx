@@ -1,30 +1,23 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-import AppHeader from "../components/AppHeader";
-import AppFooter from "../components/AppFooter";
-import AboutScreen from "../components/AboutScreen";
+import BookShelfHeader from "../components/BookShelfHeader";
+import WelcomeScreen from "../components/WelcomeScreen";
+import BookShelfFooter from "../components/BookShelfFooter";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <AppHeader />
-
-      <View style={styles.content}>
-        <AboutScreen />
-      </View>
-
-      <AppFooter />
+    <View style={styles.appContainer}>
+      <BookShelfHeader />
+      <WelcomeScreen />
+      <BookShelfFooter />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  appContainer: {
     flex: 1,
-    backgroundColor: "#495E57",
-  },
-  content: {
-    flex: 1,
+    backgroundColor: "#333333",
   },
 });
